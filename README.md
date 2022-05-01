@@ -2,22 +2,24 @@
 
 ## About the project
 
-In this notebook, I implemented a recurrent neural network (Long short-term memory) that performs sentiment analysis. I used `pytorch`.
+In this notebook, I implemented a recurrent neural network (Long short-term memory) using PyTorch that performs sentiment analysis.
 
 Here I used a dataset of Amazon baby products reviews, accompanied by product names and rates. You can find it [here](https://www.kaggle.com/ronnie3rg/amazon-baby-sentiment-analysis)
 
 
 #### Network Architecture
 
-The architecture for this network is shown below.
+The layers are as follows:
 
-![Network-architecture](assets/network_diagram_product.png)
+![Network-architecture](assets/network_readme.png)
 
-1. First, I'll pass in words to an embedding layer.
+1. An embedding layer that converts our word tokens (integers) into embeddings of a specific size.
 
-2. After input words are passed to an embedding layer, the new embeddings will be passed to LSTM cells.
+2. An LSTM layer defined by a hidden_state size and number of layers
 
-3. Finally, the LSTM outputs will go to a sigmoid output layer.
+3. A fully-connected output layer that maps the LSTM layer outputs to a desired output_size
+
+4. A sigmoid activation layer which turns all outputs into a value 0-1; return only the last sigmoid output as the output of this network.
 
 
 ___
@@ -92,5 +94,6 @@ Project Link: [https://github.com/salehsargolzaee/LSTM-for-Sentiment-Analysis](h
 ## :man_astronaut: Show your support
 
 Give a ⭐️ if you liked the project!
+
 
 
