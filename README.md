@@ -9,9 +9,11 @@ Here I used a dataset of Amazon baby products reviews, accompanied by product na
 
 #### Network Architecture
 
-The layers are as follows:
+The architecture for this network is shown below.
 
-![Network-architecture](assets/network_readme.png)
+<img src="assets/network_raedme.png" alt="Network-architecture" width="620"/>
+
+The layers are as follows:
 
 1. An embedding layer that converts our word tokens (integers) into embeddings of a specific size.
 
